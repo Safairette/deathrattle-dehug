@@ -38,6 +38,10 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2022.1.0, )"
+            },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
               "version": "[1.4.3525, )"

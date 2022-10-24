@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
-namespace DeathRattle
+namespace DeathRattle;
+
+[DefOf]
+public static class RecipeDefOfComatose
 {
-    [DefOf]
-    public static class RecipeDefOfComatose
-    {
-        public static RecipeDef ArtificialComa;
-    }
+    public static RecipeDef ArtificialComa;
 }

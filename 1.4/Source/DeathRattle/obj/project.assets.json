@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
+      "JetBrains.Annotations/2022.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/JetBrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/JetBrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Krafs.Rimworld.Ref/1.4.3525": {
         "type": "package",
         "compile": {
@@ -118,6 +131,28 @@
     }
   },
   "libraries": {
+    "JetBrains.Annotations/2022.1.0": {
+      "sha512": "ASfpoFJxiRsC9Xc4TWuPM41Zb/gl64xwfMOhnOZ3RnVWGYIZchjpWQV5zshJgoc/ZxVtgjaF7b577lURj7E6ig==",
+      "type": "package",
+      "path": "jetbrains.annotations/2022.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "jetbrains.annotations.2022.1.0.nupkg.sha512",
+        "jetbrains.annotations.nuspec",
+        "lib/net20/JetBrains.Annotations.dll",
+        "lib/net20/JetBrains.Annotations.xml",
+        "lib/netstandard1.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard1.0/JetBrains.Annotations.dll",
+        "lib/netstandard1.0/JetBrains.Annotations.xml",
+        "lib/netstandard2.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard2.0/JetBrains.Annotations.dll",
+        "lib/netstandard2.0/JetBrains.Annotations.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
+      ]
+    },
     "Krafs.Rimworld.Ref/1.4.3525": {
       "sha512": "IBYIXISCKdunri/qlbTyvdneZkgcj6Zqhf2dty2JSbTGdaTbGiNgm2ePkmzWIGCfyyFdp5XLdLkzFQ0372RU4A==",
       "type": "package",
@@ -257,6 +292,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
+      "JetBrains.Annotations >= 2022.1.0",
       "Krafs.Rimworld.Ref >= 1.4.3525",
       "UnlimitedHugs.Rimworld.HugsLib >= 10.0.1"
     ]
@@ -298,6 +334,10 @@
       "net472": {
         "targetAlias": "net472",
         "dependencies": {
+          "JetBrains.Annotations": {
+            "target": "Package",
+            "version": "[2022.1.0, )"
+          },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
             "version": "[1.4.3525, )"

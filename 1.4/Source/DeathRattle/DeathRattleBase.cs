@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using HugsLib;
+﻿using HugsLib;
 
-namespace DeathRattle
+namespace DeathRattle;
+
+public class DeathRattleBase : ModBase
 {
-    public class DeathRattleBase : ModBase
-    {
-        public override string ModIdentifier
-        {
-            get
-            {
-                return "DeathRattle";
-            }
-        }
-    }
+    public override string ModIdentifier => "DeathRattle";
 }

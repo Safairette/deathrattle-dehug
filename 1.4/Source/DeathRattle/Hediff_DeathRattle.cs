@@ -1,29 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
+﻿using Verse;
 
-namespace DeathRattle
+namespace DeathRattle;
+
+public class Hediff_DeathRattle : HediffWithComps
 {
-    public class Hediff_DeathRattle : HediffWithComps
+    public PawnCapacityDef cause;
+
+    public override void ExposeData()
     {
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Defs.Look(ref cause, "cause");
-        }
+        base.ExposeData();
+        Scribe_Defs.Look(ref cause, "cause");
+    }
 
-        public override void PostTick()
-        {
-            base.PostTick();
-            if(pawn.health.capacities.CapableOf(cause))
-            {
-                pawn.health.RemoveHediff(this);
-            }
-        }
-
-        public PawnCapacityDef cause;
+    public override void PostTick()
+    {
+        base.PostTick();
+        if (pawn.health.capacities.CapableOf(cause)) pawn.health.RemoveHediff(this);
     }
 }
