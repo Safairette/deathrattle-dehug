@@ -18,7 +18,7 @@
     <ItemGroup>
         <Using Remove="System.Net.Http" />
         <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3525" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3563" />
         <PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="10.0.1" />
     </ItemGroup>
 

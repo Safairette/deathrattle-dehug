@@ -1,4 +1,4 @@
-﻿### Objective-C template
+### Objective-C template
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -71,3 +71,39 @@ iOSInjectionProject/
 ## Custom
 .idea/
 !/1.4/Assemblies/net472/DeathRattle.dll
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+/1.4/Source/DeathRattle/obj/*
+/1.4/Assemblies/net472/0Harmony.dll
+/1.4/Assemblies/net472/HugsLib.dll
+/1.4/Assemblies/net472/JetBrains.Annotations.dll
