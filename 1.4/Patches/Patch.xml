@@ -19,14 +19,19 @@
 		</operations>
 	</Operation>
 	
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/HediffDef[defName="XenogermReplicating"]/lethalSeverity</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/HediffDef[defName="XenogermReplicating"]</xpath>
-			<value>
-				<lethalSeverity>2</lethalSeverity>
-			</value>
-		</nomatch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Biotech">
+			<xpath>/Defs/HediffDef[defName="XenogermReplicating"]/lethalSeverity</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="XenogermReplicating"]</xpath>
+				<value>
+					<lethalSeverity>2</lethalSeverity>
+				</value>
+			</nomatch>
+		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationFindMod">
