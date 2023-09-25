@@ -15,6 +15,7 @@ public class Hediff_DeathRattle : HediffWithComps
     public override void PostTick()
     {
         base.PostTick();
-        if (pawn.health.capacities.CapableOf(cause)) pawn.health.RemoveHediff(this);
+        if (pawn.health.capacities.CapableOf(cause))
+            pawn.health.RemoveHediff(this);
     }
 }
